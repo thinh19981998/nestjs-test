@@ -9,7 +9,7 @@ class User {
   @Column({ unique: true })
   public email: string;
 
-  @Column({ nullable: true })
+  @Column()
   @Exclude()
   public password: string;
 
